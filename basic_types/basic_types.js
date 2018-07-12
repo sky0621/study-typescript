@@ -1,0 +1,25 @@
+var isDone = true;
+console.log(isDone);
+var deci = 3;
+console.log(deci);
+var hecn = 0x1234;
+console.log(hecn);
+var bina = 10;
+console.log(bina);
+var oct = 668;
+console.log(oct);
+var color = "red";
+console.log(color);
+var pen = "pen";
+var pencil = "pencil";
+var amount = 115;
+var sentence = "\n    This is a " + pen + ".\n    That is a " + pencil + ".\n    Amount is " + amount + "\n";
+console.log(sentence);
+var numAry = [1, 2, 3, 5, 8, 13, 21, 34, 55];
+console.log(numAry);
+var strAry = ["JavaScript", "Golang", "Python"];
+console.log(strAry);
+var t;
+t = [343, "tft"];
+console.log(t);
+//# sourceMappingURL=basic_types.js.map
