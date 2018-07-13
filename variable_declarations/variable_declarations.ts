@@ -59,3 +59,27 @@ let o = {
 let { a, b } = o;
 console.log(a)
 console.log(b)
+console.log("");
+
+({ a, b } = { a: "baz", b: 101 });
+console.log(a)
+console.log(b)
+console.log("");
+
+let o2 = {
+    a2: "foo",
+    b: 12,
+    c: "bar"
+};
+let {a2, ...passthrough} = o2;
+console.log(a2)
+console.log(passthrough.b)
+console.log(passthrough.c)
+console.log("")
+
+function keepWholeObject(wholeObject: {a: string, b?: number}) {
+    let {a, b = 1001} = wholeObject
+}
+let wo = {a: "all", b: 500}
+console.log(wo)
+console.log("")
