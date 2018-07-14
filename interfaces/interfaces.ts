@@ -53,3 +53,58 @@ console.log(signal02)
 console.log("")
 
 // /////////////////////////////////////////////
+
+interface SearchFunc {
+    (src: string, substr: string): boolean
+}
+
+let srchFn: SearchFunc = function(src: string, sub: string): boolean {
+    let exist = src.search(sub)
+    return exist > -1
+}
+
+console.log(srchFn("testtest", "st"))
+console.log(srchFn("testtest", "sts"))
+console.log("")
+
+interface StringArray {
+    [index: number]: string;
+}
+
+let myArray: StringArray;
+myArray = ["Bob", "Fred"];
+
+let myStr: string = myArray[0];
+console.log(myStr)
+console.log("")
+
+// /////////////////////////////////////////////
+
+interface ClockInterface {
+    currentTime: Date;
+    setTime(d: Date);
+}
+
+class ClockImpl implements ClockInterface {
+    currentTime: Date;
+    setTime(d: Date) {
+        this.currentTime = d
+    }
+    constructor(h: number, m: number) {
+
+    }
+}
+
+// /////////////////////////////////////////////
+
+interface Alpha {
+    color: string
+}
+interface Beta extends Alpha {
+    side: number
+}
+let ccc = <Beta>{}
+console.log(ccc)
+ccc.color = "Green"
+ccc.side = 9876
+console.log(ccc)

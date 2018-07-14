@@ -23,5 +23,29 @@ console.log(point01);
 var signal02 = { red: 1 };
 console.log(signal02);
 console.log("");
-// /////////////////////////////////////////////
+var srchFn = function (src, sub) {
+    var exist = src.search(sub);
+    return exist > -1;
+};
+console.log(srchFn("testtest", "st"));
+console.log(srchFn("testtest", "sts"));
+console.log("");
+var myArray;
+myArray = ["Bob", "Fred"];
+var myStr = myArray[0];
+console.log(myStr);
+console.log("");
+var ClockImpl = /** @class */ (function () {
+    function ClockImpl(h, m) {
+    }
+    ClockImpl.prototype.setTime = function (d) {
+        this.currentTime = d;
+    };
+    return ClockImpl;
+}());
+var ccc = {};
+console.log(ccc);
+ccc.color = "Green";
+ccc.side = 9876;
+console.log(ccc);
 //# sourceMappingURL=interfaces.js.map
