@@ -83,3 +83,26 @@ function keepWholeObject(wholeObject: {a: string, b?: number}) {
 let wo = {a: "all", b: 500}
 console.log(wo)
 console.log("")
+
+let other1 = [3, 4]
+let other2 = [6, 7, 8, 9]
+let bothPlus = [1, 2, ...other1, 5, ...other2, 10, 11]
+console.log(bothPlus)
+console.log("")
+
+class cls {
+    vval = 111
+    mtd() {
+        console.log("mtd")
+    }
+}
+
+let c01 = new cls()
+console.log(c01)
+c01.mtd()
+console.log("")
+
+let c02 = {...c01}
+console.log(c02)
+//console.log(c02.mtd())
+console.log("")
