@@ -1,31 +1,31 @@
 # study-typescript
 
-## env
-<pre>
+## global
+
+### env
+
+```
 $ cat /etc/os-release 
 NAME="Ubuntu"
-VERSION="17.10 (Artful Aardvark)"
-</pre>
+VERSION="20.04.2 LTS (Focal Fossa)"
+```
 
-## setup
-<pre>
-$ sudo apt install nodejs
-$ node --version
-v6.11.4
-$ sudo apt install npm
-$ npm --version
-3.5.2
-$ sudo npm install -g typescript
-$ tsc --version
-Version 2.9.2
-</pre>
+## try/webpack
 
-## ref
+### env
 
-https://www.typescriptlang.org/samples/index.html
+```
+$ node -v
+v15.7.0
 
-http://www.fumiononaka.com/Business/html5/FN1804003.html
+$ npm -v
+7.10.0
+```
 
-https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html
+### procedure
 
-https://www.typescriptlang.org/docs/handbook/basic-types.html
+```
+$ npm i -D webpack webpack-cli typescript ts-loader
+
+```
+
